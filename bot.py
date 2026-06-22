@@ -20,7 +20,7 @@ async def receive_photo(update: Update,
     link = f"https://mypicture-w0w2.onrender.com/view/{photo_id}"
 
     await update.message.reply_text(
-        f"Your page:\n{link}"
+        f"Open this link:\n{link}"
     )
 
 app = Application.builder().token(TOKEN).build()
